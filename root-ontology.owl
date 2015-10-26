@@ -1,0 +1,2629 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY webprotege "http://webprotege.stanford.edu/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY project "http://webprotege.stanford.edu/project/" >
+    <!ENTITY webprotege2 "http://protege.stanford.edu/webprotege/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY DFAsJV3oQsrNpcXOX50UvF "http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#" >
+]>
+
+
+<rdf:RDF xmlns="&webprotege;project/DFAsJV3oQsrNpcXOX50UvF#"
+     xml:base="&webprotege;project/DFAsJV3oQsrNpcXOX50UvF"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:DFAsJV3oQsrNpcXOX50UvF="&webprotege;project/DFAsJV3oQsrNpcXOX50UvF#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:webprotege2="http://protege.stanford.edu/webprotege/"
+     xmlns:project="&webprotege;project/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:webprotege="http://webprotege.stanford.edu/">
+    <owl:Ontology rdf:about="">
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A knowledge base for dating historical bottles based on general attributes</rdfs:comment>
+        <dc:date rdf:datatype="&xsd;dateTime"
+            >Apr 16, 2014 8:15:59 PM</dc:date>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >This ontology was generated from an ontology revision in WebProt&#233;g&#233; http://webprotege.stanford.edu</rdfs:comment>
+        <dc:creator rdf:datatype="&xsd;string">cdheath</dc:creator>
+        <dc:creator rdf:datatype="&xsd;string">system</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/AttrOf -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;AttrOf">
+        <rdfs:label>AttrOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/AttrOfNeck -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;AttrOfNeck">
+        <rdfs:label>AttrOfNeck</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/BaseAttr -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;BaseAttr">
+        <rdfs:label>BaseAttr</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasAirVents -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasAirVents">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>HasAirVents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasBase -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasBase">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>HasBase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasBaseSeam -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasBaseSeam">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>HasBaseSeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasColor -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasColor">
+        <rdfs:label>HasColor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasDecor -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasDecor">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>HasDecor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasFinish -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasFinish">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:label>HasFinish</rdfs:label>
+        <rdfs:range rdf:resource="&webprotege;Finish"/>
+        <rdfs:domain rdf:resource="#MinimumManufactureDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasManufacture -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasManufacture">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>HasManufacture</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasNeck -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasNeck">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>HasNeck</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasOpening -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasOpening">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:label>HasOpening</rdfs:label>
+        <rdfs:range rdf:resource="&webprotege;Opening"/>
+        <rdfs:domain rdf:resource="#MinimumManufactureDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasPontilScar -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasPontilScar">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>HasPontilScar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasTexture -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasTexture">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>HasTexture</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/HasVerticleSeam -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;HasVerticleSeam">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:label>HasVerticleSeam</rdfs:label>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;VerticleSeam"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/ImpliedBy -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;ImpliedBy">
+        <rdfs:label>ImpliedBy</rdfs:label>
+        <rdfs:range rdf:resource="&webprotege;VerticleSeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/IsColor -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;IsColor">
+        <rdfs:label>IsColor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/IsContainer -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;IsContainer">
+        <rdfs:label>IsContainer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/IsInclusion -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;IsInclusion">
+        <rdfs:label>IsInclusion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/IsManufacture -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;IsManufacture">
+        <rdfs:label>IsManufacture</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/IsOpening -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;IsOpening">
+        <rdfs:label>IsOpening</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/IsSeam -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;IsSeam">
+        <rdfs:label>IsSeam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/KindOf -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;KindOf">
+        <rdfs:label>KindOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/StatusOf -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;StatusOf">
+        <rdfs:label>StatusOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/TypeOf -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;TypeOf">
+        <rdfs:label>TypeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#HasInclusions -->
+
+    <owl:ObjectProperty rdf:about="#HasInclusions"/>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#RangeImpliedBy -->
+
+    <owl:ObjectProperty rdf:about="#RangeImpliedBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="#DateRange"/>
+        <rdfs:range rdf:resource="#MinimumManufactureDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/AirVents -->
+
+    <owl:Class rdf:about="&webprotege;AirVents">
+        <rdfs:label>AirVents</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Base -->
+
+    <owl:Class rdf:about="&webprotege;Base">
+        <rdfs:label>Base</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                <owl:onClass rdf:resource="&webprotege;PontilScar"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                <owl:onClass rdf:resource="&webprotege;BaseSeam"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasTexture"/>
+                <owl:onClass rdf:resource="&webprotege;Texture"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/BaseSeam -->
+
+    <owl:Class rdf:about="&webprotege;BaseSeam">
+        <rdfs:label>BaseSeam</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;Base"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;AttrOf"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;Base"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Circle -->
+
+    <owl:Class rdf:about="&webprotege;Circle">
+        <rdfs:label>Circle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;BaseSeam"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;IsSeam"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;BaseSeam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Color -->
+
+    <owl:Class rdf:about="&webprotege;Color">
+        <rdfs:label>Color</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Finish -->
+
+    <owl:Class rdf:about="&webprotege;Finish">
+        <rdfs:label>Finish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;Neck"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;AttrOf"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;Neck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Inclusions -->
+
+    <owl:Class rdf:about="&webprotege;Inclusions">
+        <rdfs:label>Inclusions</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/ManufactureType -->
+
+    <owl:Class rdf:about="&webprotege;ManufactureType">
+        <rdfs:label>ManufactureType</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Neck -->
+
+    <owl:Class rdf:about="&webprotege;Neck">
+        <rdfs:label>Neck</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/NoVents -->
+
+    <owl:Class rdf:about="&webprotege;NoVents">
+        <rdfs:label>NoVents</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;AirVents"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;StatusOf"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;AirVents"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/No_Inclusions -->
+
+    <owl:Class rdf:about="&webprotege;No_Inclusions">
+        <rdfs:label>No_Inclusions</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;Inclusions"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;IsInclusion"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Opening -->
+
+    <owl:Class rdf:about="&webprotege;Opening">
+        <rdfs:label>Opening</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;Neck"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;AttrOf"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;Neck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/PontilScar -->
+
+    <owl:Class rdf:about="&webprotege;PontilScar">
+        <rdfs:label>PontilScar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;Base"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;AttrOf"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;Base"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R76ZvVvbhJGWOhjxkaQyFVe -->
+
+    <owl:Class rdf:about="&webprotege;R76ZvVvbhJGWOhjxkaQyFVe">
+        <rdfs:label>Present</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;AirVents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7RAmUnaP9OzOIm16KiiDGa -->
+
+    <owl:Class rdf:about="&webprotege;R7RAmUnaP9OzOIm16KiiDGa">
+        <rdfs:label>Decor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7VU8ZmQX9WXvqAWZp7LXOC -->
+
+    <owl:Class rdf:about="&webprotege;R7VU8ZmQX9WXvqAWZp7LXOC">
+        <rdfs:label>Container</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasNeck"/>
+                <owl:onClass rdf:resource="&webprotege;Neck"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasBase"/>
+                <owl:onClass rdf:resource="&webprotege;Base"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                <owl:onClass rdf:resource="&webprotege;AirVents"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasDecor"/>
+                <owl:onClass rdf:resource="&webprotege;R7RAmUnaP9OzOIm16KiiDGa"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                <owl:onClass rdf:resource="&webprotege;Color"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasManufacture"/>
+                <owl:onClass rdf:resource="&webprotege;ManufactureType"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9xggWIraSpIrMu7FkFVWsR -->
+
+    <owl:Class rdf:about="&webprotege;R9xggWIraSpIrMu7FkFVWsR">
+        <rdfs:label>Blisters</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;Inclusions"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;IsInclusion"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;Inclusions"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBHuFSmQabVaLRYtPB6qalS -->
+
+    <owl:Class rdf:about="&webprotege;RBHuFSmQabVaLRYtPB6qalS">
+        <rdfs:label>KeyMold</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;BaseSeam"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;IsSeam"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;BaseSeam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Seeds -->
+
+    <owl:Class rdf:about="&webprotege;Seeds">
+        <rdfs:label>Seeds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;Inclusions"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;IsInclusion"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;Inclusions"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Straight -->
+
+    <owl:Class rdf:about="&webprotege;Straight">
+        <rdfs:label>Straight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;BaseSeam"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;IsSeam"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;BaseSeam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Texture -->
+
+    <owl:Class rdf:about="&webprotege;Texture">
+        <rdfs:label>Texture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;Base"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;AttrOf"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;Base"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/VerticleSeam -->
+
+    <owl:Class rdf:about="&webprotege;VerticleSeam">
+        <rdfs:label>VerticleSeam</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&webprotege;Neck"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;AttrOfNeck"/>
+                <owl:someValuesFrom rdf:resource="&webprotege;Neck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#AppliedFinish -->
+
+    <owl:Class rdf:about="#AppliedFinish">
+        <rdfs:subClassOf rdf:resource="&webprotege;Finish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Aqua -->
+
+    <owl:Class rdf:about="#Aqua">
+        <rdfs:subClassOf rdf:resource="&webprotege;Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Bottle_Type -->
+
+    <owl:Class rdf:about="#Bottle_Type">
+        <rdfs:subClassOf rdf:resource="&webprotege;R7VU8ZmQX9WXvqAWZp7LXOC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                <owl:onClass rdf:resource="#NarrowOpening"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Clear -->
+
+    <owl:Class rdf:about="#Clear">
+        <rdfs:subClassOf rdf:resource="&webprotege;Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#ClearLavender -->
+
+    <owl:Class rdf:about="#ClearLavender">
+        <rdfs:subClassOf rdf:resource="#Clear"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#ClearNoTint -->
+
+    <owl:Class rdf:about="#ClearNoTint">
+        <rdfs:subClassOf rdf:resource="#Clear"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#ClearStraw -->
+
+    <owl:Class rdf:about="#ClearStraw">
+        <rdfs:subClassOf rdf:resource="#Clear"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#ContinuousVertSeam -->
+
+    <owl:Class rdf:about="#ContinuousVertSeam">
+        <rdfs:subClassOf rdf:resource="&webprotege;VerticleSeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#CorkFinish -->
+
+    <owl:Class rdf:about="#CorkFinish">
+        <rdfs:subClassOf rdf:resource="&webprotege;Finish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#DateRange -->
+
+    <owl:Class rdf:about="#DateRange">
+        <rdfs:subClassOf rdf:resource="#Dates"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Dates -->
+
+    <owl:Class rdf:about="#Dates"/>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Enamel -->
+
+    <owl:Class rdf:about="#Enamel">
+        <rdfs:subClassOf rdf:resource="&webprotege;R7RAmUnaP9OzOIm16KiiDGa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#FedEmbossing -->
+
+    <owl:Class rdf:about="#FedEmbossing">
+        <rdfs:subClassOf rdf:resource="&webprotege;R7RAmUnaP9OzOIm16KiiDGa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#HandManufacture -->
+
+    <owl:Class rdf:about="#HandManufacture">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&webprotege;ManufactureType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#TooledFinish"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&webprotege;ManufactureType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#AppliedFinish"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&webprotege;ManufactureType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#NoVertSeam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&webprotege;ManufactureType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;PontilScar"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&webprotege;ManufactureType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;BaseSeam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&webprotege;ManufactureType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#PartialVertSeam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#JarType -->
+
+    <owl:Class rdf:about="#JarType">
+        <rdfs:subClassOf rdf:resource="&webprotege;R7VU8ZmQX9WXvqAWZp7LXOC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                <owl:someValuesFrom rdf:resource="#WideOpening"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MachineManufacture -->
+
+    <owl:Class rdf:about="#MachineManufacture">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&webprotege;ManufactureType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#ContinuousVertSeam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1820 -->
+
+    <owl:Class rdf:about="#MinDate1820">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Aqua"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="#NoBaseSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#AppliedFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#ScarPresent"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;R9xggWIraSpIrMu7FkFVWsR"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Seeds"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1850 -->
+
+    <owl:Class rdf:about="#MinDate1850">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#CorkFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#ThreadFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#ContinuousVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;R9xggWIraSpIrMu7FkFVWsR"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1855 -->
+
+    <owl:Class rdf:about="#MinDate1855">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="&webprotege;Circle"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Aqua"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;RBHuFSmQabVaLRYtPB6qalS"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Straight"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#AppliedFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;PontilScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#PartialVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1860 -->
+
+    <owl:Class rdf:about="#MinDate1860">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Aqua"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Circle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;RBHuFSmQabVaLRYtPB6qalS"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Straight"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#AppliedFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#ScarPresent"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#PartialVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1865 -->
+
+    <owl:Class rdf:about="#MinDate1865">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <rdf:Description rdf:about="#NoScar"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Aqua"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Circle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;RBHuFSmQabVaLRYtPB6qalS"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Straight"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#AppliedFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1870 -->
+
+    <owl:Class rdf:about="#MinDate1870">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Aqua"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#ScarPresent"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Circle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;RBHuFSmQabVaLRYtPB6qalS"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Straight"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="#NoBaseSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#AppliedFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#TooledFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#PartialVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1875 -->
+
+    <owl:Class rdf:about="#MinDate1875">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Aqua"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Circle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Straight"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="#NoBaseSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#AppliedFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#TooledFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#PartialVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1880 -->
+
+    <owl:Class rdf:about="#MinDate1880">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="&webprotege;Straight"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Aqua"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Circle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="#NoBaseSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#AppliedFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#TooledFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#PartialVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1885 -->
+
+    <owl:Class rdf:about="#MinDate1885">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Aqua"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;R76ZvVvbhJGWOhjxkaQyFVe"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Circle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="#NoBaseSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#AppliedFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#TooledFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#PartialVertSeam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1890 -->
+
+    <owl:Class rdf:about="#MinDate1890">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Aqua"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;R76ZvVvbhJGWOhjxkaQyFVe"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="#NoBaseSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#TooledFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasManufacture"/>
+                        <owl:someValuesFrom rdf:resource="#HandManufacture"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#PartialVertSeam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1905 -->
+
+    <owl:Class rdf:about="#MinDate1905">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#ClearStraw"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBase"/>
+                        <owl:someValuesFrom rdf:resource="#SuctionScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Aqua"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearLavender"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#ThreadFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#ContinuousVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;R9xggWIraSpIrMu7FkFVWsR"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#ClearStraw"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBase"/>
+                        <owl:someValuesFrom rdf:resource="#SuctionScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Aqua"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearLavender"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#ContinuousVertSeam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1910 -->
+
+    <owl:Class rdf:about="#MinDate1910">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="&webprotege;Circle"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;R76ZvVvbhJGWOhjxkaQyFVe"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="#NoBaseSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#TooledFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasManufacture"/>
+                        <owl:someValuesFrom rdf:resource="#HandManufacture"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#PartialVertSeam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1912 -->
+
+    <owl:Class rdf:about="#MinDate1912">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBase"/>
+                        <owl:someValuesFrom rdf:resource="#SuctionScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Aqua"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearLavender"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearStraw"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Finish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#ContinuousVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;R9xggWIraSpIrMu7FkFVWsR"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1920 -->
+
+    <owl:Class rdf:about="#MinDate1920">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Aqua"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearLavender"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearStraw"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#CorkFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#ThreadFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasManufacture"/>
+                        <owl:someValuesFrom rdf:resource="#MachineManufacture"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#ContinuousVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;R9xggWIraSpIrMu7FkFVWsR"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Seeds"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1930 -->
+
+    <owl:Class rdf:about="#MinDate1930">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Enamel"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#FedEmbossing"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearLavender"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearStraw"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#ContinuousVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Seeds"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1935 -->
+
+    <owl:Class rdf:about="#MinDate1935">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="&webprotege;Texture"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearLavender"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearNoTint"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearStraw"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasDecor"/>
+                        <owl:someValuesFrom rdf:resource="#Enamel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasDecor"/>
+                        <owl:someValuesFrom rdf:resource="#FedEmbossing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#CorkFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#ThreadFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#ContinuousVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Seeds"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1940 -->
+
+    <owl:Class rdf:about="#MinDate1940">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBase"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Texture"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearLavender"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearNoTint"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearStraw"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasDecor"/>
+                        <owl:someValuesFrom rdf:resource="#Enamel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasDecor"/>
+                        <owl:someValuesFrom rdf:resource="#FedEmbossing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#CorkFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#ThreadFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#ContinuousVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Seeds"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#MinimumManufactureDate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDate1960 -->
+
+    <owl:Class rdf:about="#MinDate1960">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#FedEmbossing"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBase"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Texture"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearLavender"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearNoTint"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#ClearStraw"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="#Other"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasDecor"/>
+                        <owl:someValuesFrom rdf:resource="#Enamel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#CorkFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#ThreadFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#NoScar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#ContinuousVertSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;No_Inclusions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#HasInclusions"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Seeds"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#MinimumManufactureDate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinDateBefore1820 -->
+
+    <owl:Class rdf:about="#MinDateBefore1820">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#MinimumManufactureDate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Aqua"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="#Clear"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasAirVents"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;NoVents"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasBaseSeam"/>
+                        <owl:someValuesFrom rdf:resource="#NoBaseSeam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasColor"/>
+                        <owl:someValuesFrom rdf:resource="&webprotege;Color"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasFinish"/>
+                        <owl:someValuesFrom rdf:resource="#NoFinish"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#NarrowOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasOpening"/>
+                        <owl:someValuesFrom rdf:resource="#WideOpening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasPontilScar"/>
+                        <owl:someValuesFrom rdf:resource="#ScarPresent"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&webprotege;HasVerticleSeam"/>
+                        <owl:someValuesFrom rdf:resource="#NoVertSeam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#MinimumManufactureDate -->
+
+    <owl:Class rdf:about="#MinimumManufactureDate">
+        <rdfs:subClassOf rdf:resource="#Dates"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#NarrowOpening -->
+
+    <owl:Class rdf:about="#NarrowOpening">
+        <rdfs:subClassOf rdf:resource="&webprotege;Opening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#NoBaseSeam -->
+
+    <owl:Class rdf:about="#NoBaseSeam">
+        <rdfs:subClassOf rdf:resource="&webprotege;BaseSeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#NoFinish -->
+
+    <owl:Class rdf:about="#NoFinish">
+        <rdfs:subClassOf rdf:resource="&webprotege;Finish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#NoScar -->
+
+    <owl:Class rdf:about="#NoScar">
+        <rdfs:subClassOf rdf:resource="&webprotege;PontilScar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#NoVertSeam -->
+
+    <owl:Class rdf:about="#NoVertSeam">
+        <rdfs:subClassOf rdf:resource="&webprotege;VerticleSeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Other -->
+
+    <owl:Class rdf:about="#Other">
+        <rdfs:subClassOf rdf:resource="&webprotege;Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#PartialVertSeam -->
+
+    <owl:Class rdf:about="#PartialVertSeam">
+        <rdfs:subClassOf rdf:resource="&webprotege;VerticleSeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1820-1860 -->
+
+    <owl:Class rdf:about="#Range1820-1860">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1820"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1850-1920 -->
+
+    <owl:Class rdf:about="#Range1850-1920">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1850"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1855-1870 -->
+
+    <owl:Class rdf:about="#Range1855-1870">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1855"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1860-1890 -->
+
+    <owl:Class rdf:about="#Range1860-1890">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1860"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1865-1890 -->
+
+    <owl:Class rdf:about="#Range1865-1890">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1865"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1870-1910 -->
+
+    <owl:Class rdf:about="#Range1870-1910">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1870"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1875-1910 -->
+
+    <owl:Class rdf:about="#Range1875-1910">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1875"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1880-1910 -->
+
+    <owl:Class rdf:about="#Range1880-1910">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1880"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1885-1910 -->
+
+    <owl:Class rdf:about="#Range1885-1910">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1885"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1890-1910 -->
+
+    <owl:Class rdf:about="#Range1890-1910">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1890"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1905-1920 -->
+
+    <owl:Class rdf:about="#Range1905-1920">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1905"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1910-1920 -->
+
+    <owl:Class rdf:about="#Range1910-1920">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1910"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1912-1920 -->
+
+    <owl:Class rdf:about="#Range1912-1920">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1912"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1920-Present -->
+
+    <owl:Class rdf:about="#Range1920-Present">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1920"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1930-Present -->
+
+    <owl:Class rdf:about="#Range1930-Present">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1930"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1935-1960 -->
+
+    <owl:Class rdf:about="#Range1935-1960">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1935"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1940-1960 -->
+
+    <owl:Class rdf:about="#Range1940-1960">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1940"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#Range1960-Present -->
+
+    <owl:Class rdf:about="#Range1960-Present">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDate1960"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#RangeBefore1820 -->
+
+    <owl:Class rdf:about="#RangeBefore1820">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DateRange"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#RangeImpliedBy"/>
+                        <owl:someValuesFrom rdf:resource="#MinDateBefore1820"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#ScarPresent -->
+
+    <owl:Class rdf:about="#ScarPresent">
+        <rdfs:subClassOf rdf:resource="&webprotege;PontilScar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#SuctionScar -->
+
+    <owl:Class rdf:about="#SuctionScar">
+        <rdfs:subClassOf rdf:resource="&webprotege;Base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#ThreadFinish -->
+
+    <owl:Class rdf:about="#ThreadFinish">
+        <rdfs:subClassOf rdf:resource="&webprotege;Finish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#TooledFinish -->
+
+    <owl:Class rdf:about="#TooledFinish">
+        <rdfs:subClassOf rdf:resource="&webprotege;Finish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/DFAsJV3oQsrNpcXOX50UvF#WideOpening -->
+
+    <owl:Class rdf:about="#WideOpening">
+        <rdfs:subClassOf rdf:resource="&webprotege;Opening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#MinDate1820"/>
+            <rdf:Description rdf:about="#MinDate1850"/>
+            <rdf:Description rdf:about="#MinDate1855"/>
+            <rdf:Description rdf:about="#MinDate1860"/>
+            <rdf:Description rdf:about="#MinDate1865"/>
+            <rdf:Description rdf:about="#MinDate1870"/>
+            <rdf:Description rdf:about="#MinDate1875"/>
+            <rdf:Description rdf:about="#MinDate1880"/>
+            <rdf:Description rdf:about="#MinDate1885"/>
+            <rdf:Description rdf:about="#MinDate1890"/>
+            <rdf:Description rdf:about="#MinDate1905"/>
+            <rdf:Description rdf:about="#MinDate1910"/>
+            <rdf:Description rdf:about="#MinDate1912"/>
+            <rdf:Description rdf:about="#MinDate1920"/>
+            <rdf:Description rdf:about="#MinDate1930"/>
+            <rdf:Description rdf:about="#MinDate1935"/>
+            <rdf:Description rdf:about="#MinDate1940"/>
+            <rdf:Description rdf:about="#MinDate1960"/>
+            <rdf:Description rdf:about="#MinDateBefore1820"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+
